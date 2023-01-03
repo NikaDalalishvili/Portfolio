@@ -1,0 +1,134 @@
+@import url('./color.css');
+@import url("./primary-elemenets.css");
+
+/*
+ *  GLOBAL VARIABLES
+ */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--primary);
+    line-height: 1.5;
+}
+
+
+
+/*
+ *  MAIN
+ */
+
+.main {
+    background-color: var(--gray);
+    margin: 30px 8px;
+    padding: 15px;
+    border-radius: 5px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/*
+ *  TITLE AND CAPTION
+ */
+
+.title-container { 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title {
+    margin-top: 25px;
+
+    color: var(--white);
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+}
+
+.title-caption {
+    margin: 16px 0;
+
+    /* color: var(--primary-li); */
+    color: rgba(238, 238, 238, 0.75);
+    font-family: 'Poppins';
+    font-style: normal;
+    font-size: 22px;
+}
+
+/*
+ *  IMAGE CONTAINER
+ */
+
+.img-div {
+    background-color: var(--primary);
+    width: 100%;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.dalala-logo {
+    max-width: 100%;
+}
+
+.img-caption {
+    margin: 20px 0 5px;
+
+    color: rgba(238, 238, 238, 0.75);
+    /* color: var(--gray); */
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+}
+
+/*
+ *  TIMELINE INFO SECTION
+ */
+
+.headline {
+    margin: 50px 0;
+
+    color: var(--white);
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+}
+
+.timeline-info li {
+    margin: 16px 0;
+
+    color: rgba(238, 238, 238, 0.75);
+    font-family: 'Poppins';
+    font-style: normal;
+    font-size: 18px;
+}
+
+.bold-for-list {
+    color: var(--primary-li);
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.footer-caption {
+    
+}

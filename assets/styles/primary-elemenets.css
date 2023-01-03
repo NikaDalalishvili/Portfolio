@@ -1,0 +1,129 @@
+@import url(./color.css);
+
+/*
+ *  PRIMARY LINE
+ */
+
+.primary-line {
+    position: absolute;
+    border: 1px solid rgba(238, 238, 238, 0.1);
+    z-index: -1;
+}
+
+
+/*
+ *  PRIMARY LOGO
+ */
+
+.primary-logo {
+    color: var(--white);
+    font-family: 'Oswald' ,sans-serif;
+    font-size: 24px;
+    line-height: 36px;
+    font-weight: 700;
+    font-style: normal;
+    cursor: pointer;
+}
+
+/* PRIMARY LINKS */
+
+.primary-link-box {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+.primary-link {
+    color: var(--white);
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    cursor: pointer;
+}
+
+/*
+ *  PRIMARY TITLES AND CAPTIONS
+ */
+
+ .primary-title {
+    color: var(--white);
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 96px;
+}
+
+.primary-bold-title {
+    color: var(--primary-li);
+    font-size: 80px;
+}
+
+.primary-caption {
+    color: var(--primary-li);
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 48px;
+}
+
+
+
+/*
+ *  BUTTONS
+ */
+
+.primary-btn-li,
+.primary-btn-dark {
+    width: auto;
+    border-radius: 24px;
+    border: none;
+    cursor: pointer;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 10px 32px;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 27px;
+
+    color: var(--white);
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+}
+
+.primary-btn-li {
+    background-color: var(--primary-li);
+}
+
+.primary-btn-dark {
+    background-color: var(--gray);
+    backdrop-filter: blur(2px);
+}
+
+/*
+ *  PRIMARY ICONS
+ */
+
+.primary-icon-box {
+    width: 48px;
+    height: 48px;
+    background-color: var(--gray);
+    border-radius: 48px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.primary-icon {
+    width: 24px;
+    height: 24px;
+}
