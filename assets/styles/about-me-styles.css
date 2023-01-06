@@ -16,15 +16,13 @@ body {
     line-height: 1.5;
 }
 
-
-
 /*
  *  MAIN
  */
 
 .main {
-    background-color: var(--gray);
-    margin: 30px 8px;
+    background-color: var(--primary-li);
+    margin: 30px 18px;
     padding: 15px;
     border-radius: 5px;
 
@@ -48,7 +46,7 @@ body {
 .title {
     margin-top: 25px;
 
-    color: var(--white);
+    color: var(--primary-white);
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 700;
@@ -58,18 +56,18 @@ body {
 .title-caption {
     margin: 16px 0;
 
-    /* color: var(--primary-li); */
-    color: rgba(238, 238, 238, 0.75);
+    color: var(--primary-blue-li);
+    /* color: rgba(238, 238, 238, 0.75); */
     font-family: 'Poppins';
     font-style: normal;
     font-size: 22px;
 }
 
 /*
- *  IMAGE CONTAINER
+ *  ABOUT ME SECTION
  */
 
-.img-div {
+.about-me-section {
     background-color: var(--primary);
     width: 100%;
     margin: 5px 0;
@@ -77,25 +75,50 @@ body {
     border-radius: 5px;
 
     display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 200px;
+}
+
+.about-me-bio-container {
+    width: 400px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.about-me-bio {
+    /* color: rgba(238, 238, 238, 0.75); */
+    color: var(--primary-white);
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.img-div {
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
 .dalala-logo {
-    max-width: 100%;
+    max-width: 300px;
 }
 
 .img-caption {
     margin: 20px 0 5px;
 
     color: rgba(238, 238, 238, 0.75);
-    /* color: var(--gray); */
+    /* color: var(--primary-li); */
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
-    line-height: 27px;
 }
 
 /*
@@ -105,15 +128,17 @@ body {
 .headline {
     margin: 50px 0;
 
-    color: var(--white);
+    color: var(--primary-white);
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 700;
     font-size: 30px;
+    text-align: center;
 }
 
 .timeline-info li {
     margin: 16px 0;
+    list-style:none;
 
     color: rgba(238, 238, 238, 0.75);
     font-family: 'Poppins';
@@ -121,14 +146,19 @@ body {
     font-size: 18px;
 }
 
+.timeline-info li::before {
+    content: "\2022";
+    color: var(--primary-blue-li);
+    font-weight: bold;
+    display: inline-block; 
+    width: 1em;
+    margin-left: -1em;
+}
+
 .bold-for-list {
-    color: var(--primary-li);
+    color: var(--primary-blue-li);
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 700;
     font-size: 20px;
-}
-
-.footer-caption {
-    
 }
